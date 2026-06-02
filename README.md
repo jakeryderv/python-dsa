@@ -28,9 +28,8 @@ algorithms/
   dynamic-programming.ipynb
   graph-algorithms.ipynb
   string-algorithms.ipynb
+  bit-manipulation.ipynb
 ```
-
-> The `algorithms/` track has begun; more topics (searching, recursion/DP, graph algorithms) to follow.
 
 ## Notebooks
 
@@ -58,7 +57,7 @@ algorithms/
 | [dynamic programming](algorithms/dynamic-programming.ipynb) | ✅ | top-down memo vs bottom-up table; coin change, LCS, edit distance, knapsack + 1D rolling |
 | [graph algorithms](algorithms/graph-algorithms.ipynb) | ✅ | Dijkstra, Bellman-Ford, A\*, union-find, MST (Kruskal/Prim) |
 | [string algorithms](algorithms/string-algorithms.ipynb) | ✅ | naive/KMP/Rabin-Karp; CPython `fastsearch` (BMH + two-way); built-in vs pure-Python |
-| bit manipulation | 📋 | arbitrary-precision `int` (`PyLong`, 30-bit digits); bitwise tricks |
+| [bit manipulation](algorithms/bit-manipulation.ipynb) | ✅ | arbitrary-precision `int` (`PyLong`, 30-bit digits); bit tricks; masking; bitmask sets |
 
 ## Running
 
