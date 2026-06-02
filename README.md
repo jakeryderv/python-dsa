@@ -38,6 +38,7 @@ The directories and files are numbered as a learning path — read them in order
 
 3-patterns/
   01-two-pointers.ipynb
+  02-sliding-window.ipynb
   …                         (more patterns planned — see the table below)
 
 templates/
@@ -86,7 +87,7 @@ Problem-solving templates that combine the structures & algorithms above. These 
 | Topic | Status | Covers |
 |---|:---:|---|
 | [two pointers](3-patterns/01-two-pointers.ipynb) | ✅ | converging, read/write, fast & slow (Floyd's); two-sum, dedupe, happy number |
-| sliding window | 📋 | fixed & variable windows |
+| [sliding window](3-patterns/02-sliding-window.ipynb) | ✅ | fixed & variable windows; max-sum-k, longest-unique-substring, min-subarray |
 | prefix sums & difference arrays | 📋 | O(1) range-sum / range-update |
 | monotonic stack & queue | 📋 | next-greater-element, sliding-window-max |
 | top-K & K-way merge | 📋 | `heapq` selection & merging |
