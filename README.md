@@ -44,6 +44,7 @@ The directories and files are numbered as a learning path — read them in order
   05-top-k-and-k-way-merge.ipynb
   06-cyclic-sort.ipynb
   07-combinatorial-generation.ipynb
+  08-coordinate-compression.ipynb
   …                         (more patterns planned — see the table below)
 
 templates/
@@ -98,7 +99,7 @@ Problem-solving templates that combine the structures & algorithms above. These 
 | [top-K & K-way merge](3-patterns/05-top-k-and-k-way-merge.ipynb) | ✅ | size-k heap (O(n log k)), top-k-frequent, frontier-heap merge, `heapq.merge` |
 | [cyclic sort](3-patterns/06-cyclic-sort.ipynb) | ✅ | in-place sort for `1..n` ranges; find missing/duplicate numbers in O(n)/O(1) |
 | [combinatorial generation](3-patterns/07-combinatorial-generation.ipynb) | ✅ | subsets/permutations/combinations (backtracking + bitmask); `itertools` |
-| coordinate compression | 📋 | map sparse values to dense indices |
+| [coordinate compression](3-patterns/08-coordinate-compression.ipynb) | ✅ | map sparse/huge values to dense `0..k-1` ranks; index a size-k array by value |
 | meet in the middle | 📋 | split the search space, combine halves |
 | sweep line | 📋 | events sorted along an axis |
 
