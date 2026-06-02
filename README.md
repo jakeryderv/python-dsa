@@ -47,7 +47,7 @@ algorithms/
 
 | Topic | Status | Covers |
 |---|:---:|---|
-| [sorting](algorithms/sorting.ipynb) | ✅ | Timsort internals (runs, galloping, adaptive, stable); `key=`/DSU; classic sorts raced |
+| [sorting](algorithms/sorting.ipynb) | ✅ | Timsort internals (runs, galloping, adaptive, stable); `key=`/DSU; bubble→radix implemented & raced; counting sort beats Timsort |
 | searching | 📋 | binary search & `bisect` invariants; linear vs binary |
 | recursion & backtracking | 📋 | the call stack, no tail-call optimization, recursion limit; backtracking |
 | dynamic programming | 📋 | memoization (`functools.cache`) vs tabulation; classic DPs |
