@@ -17,6 +17,7 @@ data-structures/
   heaps.ipynb
   linked-lists.ipynb
   stacks-and-queues.ipynb
+  trees.ipynb
 ```
 
 > An `algorithms/` folder will follow later (sorting, searching, recursion/DP, graph traversals).
@@ -31,7 +32,7 @@ data-structures/
 | [heaps](data-structures/heaps.ipynb) | ✅ | `heapq` binary heap, sift up/down, `heapify` is O(n) |
 | [linked lists](data-structures/linked-lists.ipynb) | ✅ | singly/doubly from scratch; why CPython avoids them; `deque`/`OrderedDict` |
 | [stacks & queues](data-structures/stacks-and-queues.ipynb) | ✅ | LIFO/FIFO; the `list`-as-queue O(n²) trap; `deque(maxlen)`; `queue` module |
-| trees | 📋 | BST, traversals, `bisect` on sorted lists, tries |
+| [trees](data-structures/trees.ipynb) | ✅ | BST from scratch, DFS/BFS traversals, the balance problem, `bisect` |
 | graphs | 📋 | adjacency list vs matrix, BFS/DFS |
 
 ## Running
