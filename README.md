@@ -24,6 +24,7 @@ data-structures/
 algorithms/
   sorting.ipynb
   searching.ipynb
+  recursion-and-backtracking.ipynb
 ```
 
 > The `algorithms/` track has begun; more topics (searching, recursion/DP, graph algorithms) to follow.
@@ -50,7 +51,7 @@ algorithms/
 |---|:---:|---|
 | [sorting](algorithms/sorting.ipynb) | ✅ | Timsort internals (runs, galloping, adaptive, stable); `key=`/DSU; bubble→radix implemented & raced; counting sort beats Timsort |
 | [searching](algorithms/searching.ipynb) | ✅ | linear vs binary; binary search from scratch; `bisect` (left/right, `key=`, pred/succ); binary search on the answer |
-| recursion & backtracking | 📋 | the call stack, no tail-call optimization, recursion limit; backtracking |
+| [recursion & backtracking](algorithms/recursion-and-backtracking.ipynb) | ✅ | call stack, no tail-call optimization, recursion limit; memoization (`functools.cache`); permutations/subsets/N-queens |
 | dynamic programming | 📋 | memoization (`functools.cache`) vs tabulation; classic DPs |
 | graph algorithms | 📋 | Dijkstra / A\* / Bellman-Ford, MST (Prim/Kruskal + union-find) |
 | string algorithms | 📋 | the two-way algorithm `str.find` uses, KMP, Rabin-Karp |
