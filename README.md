@@ -26,6 +26,7 @@ The directories and files are numbered as a learning path — read them in order
   07-trees.ipynb
   08-tries.ipynb
   09-graphs.ipynb
+  10-fenwick-and-segment-trees.ipynb
 
 2-algorithms/
   01-sorting.ipynb
@@ -35,6 +36,8 @@ The directories and files are numbered as a learning path — read them in order
   05-graph-algorithms.ipynb
   06-string-algorithms.ipynb
   07-bit-manipulation.ipynb
+  08-greedy.ipynb
+  09-number-theory.ipynb
 
 3-patterns/
   01-two-pointers.ipynb
@@ -74,6 +77,7 @@ templates/
 | [trees](1-data-structures/07-trees.ipynb) | ✅ | BST from scratch (insert/search/**delete**), DFS/BFS traversals, the balance problem, `bisect` |
 | [tries](1-data-structures/08-tries.ipynb) | ✅ | prefix tree from scratch, autocomplete, node sharing, when a `set` wins |
 | [graphs](1-data-structures/09-graphs.ipynb) | ✅ | adjacency list vs matrix, BFS/DFS, topological sort, Dijkstra |
+| [Fenwick & segment trees](1-data-structures/10-fenwick-and-segment-trees.ipynb) | ✅ | dynamic range queries: Fenwick (BIT) + segment tree, O(log n) update & query |
 
 ### Algorithms
 
@@ -86,6 +90,8 @@ templates/
 | [graph algorithms](2-algorithms/05-graph-algorithms.ipynb) | ✅ | Dijkstra, Bellman-Ford, A\*, union-find, MST (Kruskal/Prim) |
 | [string algorithms](2-algorithms/06-string-algorithms.ipynb) | ✅ | naive/KMP/Rabin-Karp; CPython `fastsearch` (BMH + two-way); built-in vs pure-Python |
 | [bit manipulation](2-algorithms/07-bit-manipulation.ipynb) | ✅ | arbitrary-precision `int` (`PyLong`, 30-bit digits); bit tricks; masking; bitmask sets |
+| [greedy](2-algorithms/08-greedy.ipynb) | ✅ | greedy-choice property; activity selection, fractional knapsack, jump game; when greedy fails (→ DP) |
+| [number theory](2-algorithms/09-number-theory.ipynb) | ✅ | GCD/Euclid, sieve of Eratosthenes, modular exponentiation & inverse, combinatorics |
 
 ### Patterns
 
