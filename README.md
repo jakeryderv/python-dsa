@@ -15,6 +15,7 @@ data-structures/
   strings.ipynb
   dictionaries-and-sets.ipynb
   heaps.ipynb
+  linked-lists.ipynb
 ```
 
 > An `algorithms/` folder will follow later (sorting, searching, recursion/DP, graph traversals).
@@ -27,7 +28,7 @@ data-structures/
 | [strings](data-structures/strings.ipynb) | ✅ | `str`, PEP 393 char-width, interning, the `+=` trap, `bytes`/`bytearray` |
 | [dict & set](data-structures/dictionaries-and-sets.ipynb) | ✅ | hash tables, open addressing, compact-dict layout, resizing, hashing |
 | [heaps](data-structures/heaps.ipynb) | ✅ | `heapq` binary heap, sift up/down, `heapify` is O(n) |
-| linked lists | 📋 | singly/doubly from scratch; why CPython avoids them |
+| [linked lists](data-structures/linked-lists.ipynb) | ✅ | singly/doubly from scratch; why CPython avoids them; `deque`/`OrderedDict` |
 | stacks & queues | 📋 | `list` / `deque` / `queue.Queue`; LIFO & FIFO |
 | trees | 📋 | BST, traversals, `bisect` on sorted lists, tries |
 | graphs | 📋 | adjacency list vs matrix, BFS/DFS |
