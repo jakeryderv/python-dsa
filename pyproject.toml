@@ -20,5 +20,5 @@ dev = [
 # Execute every notebook end-to-end and fail on any cell error (nbmake).
 # Runs in memory — does NOT overwrite saved outputs.
 addopts = "--nbmake --nbmake-timeout=180"
-testpaths = ["data-structures", "algorithms"]
-norecursedirs = [".ipynb_checkpoints", ".venv", ".git"]
+testpaths = ["0-foundations", "1-data-structures", "2-algorithms"]
+norecursedirs = [".ipynb_checkpoints", ".venv", ".git", "templates"]
