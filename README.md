@@ -67,6 +67,16 @@ uv run jupyter lab                     # interactive editing
 uv run jupyter nbconvert --to notebook --execute --inplace data-structures/<name>.ipynb
 ```
 
+## Testing
+
+Every notebook is executed end-to-end on each push via [`nbmake`](https://github.com/treebeardtech/nbmake), so committed notebooks never go stale or broken. Run the same check locally:
+
+```bash
+uv run pytest                 # runs nbmake over data-structures/ and algorithms/
+```
+
+This executes notebooks in memory (it does **not** overwrite their saved outputs) and fails on any cell error. CI runs it via `.github/workflows/notebooks.yml`.
+
 ## House style
 
 - Every nontrivial claim gets a **runnable demo that proves it** (`sys.getsizeof`, `id`, timing).

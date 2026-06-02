@@ -1,7 +1,7 @@
 [project]
 name = "python-dsa"
 version = "0.1.0"
-description = "Add your description here"
+description = "Notes and runnable examples on data structures & algorithms, focused on CPython internals"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
@@ -9,3 +9,16 @@ dependencies = [
     "jupyter>=1.1.1",
     "numpy>=2.4.6",
 ]
+
+[dependency-groups]
+dev = [
+    "nbmake>=1.5.5",
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+# Execute every notebook end-to-end and fail on any cell error (nbmake).
+# Runs in memory — does NOT overwrite saved outputs.
+addopts = "--nbmake --nbmake-timeout=180"
+testpaths = ["data-structures", "algorithms"]
+norecursedirs = [".ipynb_checkpoints", ".venv", ".git"]
