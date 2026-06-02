@@ -23,6 +23,7 @@ data-structures/
 
 algorithms/
   sorting.ipynb
+  searching.ipynb
 ```
 
 > The `algorithms/` track has begun; more topics (searching, recursion/DP, graph algorithms) to follow.
@@ -33,13 +34,13 @@ algorithms/
 
 | Topic | Status | Covers |
 |---|:---:|---|
-| [arrays](data-structures/arrays.ipynb) | ✅ | `list`, `tuple`, `array`, `numpy`, `deque`; dynamic-array growth strategy |
+| [arrays](data-structures/arrays.ipynb) | ✅ | `list`, `tuple`, `array`, `numpy`, `deque`; growth strategy; the `[[0]*n]*m` aliasing gotcha |
 | [strings](data-structures/strings.ipynb) | ✅ | `str`, PEP 393 char-width, interning, the `+=` trap, `bytes`/`bytearray` |
 | [dict & set](data-structures/dictionaries-and-sets.ipynb) | ✅ | hash tables, open addressing, compact-dict layout, resizing, hashing |
 | [heaps](data-structures/heaps.ipynb) | ✅ | `heapq` binary heap, sift up/down, `heapify` is O(n) |
-| [linked lists](data-structures/linked-lists.ipynb) | ✅ | singly/doubly from scratch; why CPython avoids them; `deque`/`OrderedDict` |
+| [linked lists](data-structures/linked-lists.ipynb) | ✅ | singly/doubly from scratch; reversal & Floyd's cycle detection; why CPython avoids them; `deque`/`OrderedDict` |
 | [stacks & queues](data-structures/stacks-and-queues.ipynb) | ✅ | LIFO/FIFO; the `list`-as-queue O(n²) trap; `deque(maxlen)`; `queue` module |
-| [trees](data-structures/trees.ipynb) | ✅ | BST from scratch, DFS/BFS traversals, the balance problem, `bisect` |
+| [trees](data-structures/trees.ipynb) | ✅ | BST from scratch (insert/search/**delete**), DFS/BFS traversals, the balance problem, `bisect` |
 | [tries](data-structures/tries.ipynb) | ✅ | prefix tree from scratch, autocomplete, node sharing, when a `set` wins |
 | [graphs](data-structures/graphs.ipynb) | ✅ | adjacency list vs matrix, BFS/DFS, topological sort, Dijkstra |
 
@@ -48,7 +49,7 @@ algorithms/
 | Topic | Status | Covers |
 |---|:---:|---|
 | [sorting](algorithms/sorting.ipynb) | ✅ | Timsort internals (runs, galloping, adaptive, stable); `key=`/DSU; bubble→radix implemented & raced; counting sort beats Timsort |
-| searching | 📋 | binary search & `bisect` invariants; linear vs binary |
+| [searching](algorithms/searching.ipynb) | ✅ | linear vs binary; binary search from scratch; `bisect` (left/right, `key=`, pred/succ); binary search on the answer |
 | recursion & backtracking | 📋 | the call stack, no tail-call optimization, recursion limit; backtracking |
 | dynamic programming | 📋 | memoization (`functools.cache`) vs tabulation; classic DPs |
 | graph algorithms | 📋 | Dijkstra / A\* / Bellman-Ford, MST (Prim/Kruskal + union-find) |
