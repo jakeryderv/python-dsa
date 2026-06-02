@@ -46,7 +46,7 @@ The directories and files are numbered as a learning path — read them in order
   07-combinatorial-generation.ipynb
   08-coordinate-compression.ipynb
   09-meet-in-the-middle.ipynb
-  …                         (more patterns planned — see the table below)
+  10-sweep-line.ipynb
 
 templates/
   notebook-template.ipynb   ← copy this to start a new topic
@@ -102,7 +102,7 @@ Problem-solving templates that combine the structures & algorithms above. These 
 | [combinatorial generation](3-patterns/07-combinatorial-generation.ipynb) | ✅ | subsets/permutations/combinations (backtracking + bitmask); `itertools` |
 | [coordinate compression](3-patterns/08-coordinate-compression.ipynb) | ✅ | map sparse/huge values to dense `0..k-1` ranks; index a size-k array by value |
 | [meet in the middle](3-patterns/09-meet-in-the-middle.ipynb) | ✅ | split 2ⁿ → 2·2^(n/2); subset-sum/closest-sum for n≈40, combine with set or `bisect` |
-| sweep line | 📋 | events sorted along an axis |
+| [sweep line](3-patterns/10-sweep-line.ipynb) | ✅ | events sorted along an axis; merge intervals, min-meeting-rooms (events + heap) |
 
 ## Running
 
