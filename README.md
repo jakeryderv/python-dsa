@@ -27,6 +27,7 @@ algorithms/
   recursion-and-backtracking.ipynb
   dynamic-programming.ipynb
   graph-algorithms.ipynb
+  string-algorithms.ipynb
 ```
 
 > The `algorithms/` track has begun; more topics (searching, recursion/DP, graph algorithms) to follow.
@@ -56,7 +57,7 @@ algorithms/
 | [recursion & backtracking](algorithms/recursion-and-backtracking.ipynb) | ✅ | call stack, no tail-call optimization, recursion limit; memoization (`functools.cache`); permutations/subsets/N-queens |
 | [dynamic programming](algorithms/dynamic-programming.ipynb) | ✅ | top-down memo vs bottom-up table; coin change, LCS, edit distance, knapsack + 1D rolling |
 | [graph algorithms](algorithms/graph-algorithms.ipynb) | ✅ | Dijkstra, Bellman-Ford, A\*, union-find, MST (Kruskal/Prim) |
-| string algorithms | 📋 | the two-way algorithm `str.find` uses, KMP, Rabin-Karp |
+| [string algorithms](algorithms/string-algorithms.ipynb) | ✅ | naive/KMP/Rabin-Karp; CPython `fastsearch` (BMH + two-way); built-in vs pure-Python |
 | bit manipulation | 📋 | arbitrary-precision `int` (`PyLong`, 30-bit digits); bitwise tricks |
 
 ## Running
