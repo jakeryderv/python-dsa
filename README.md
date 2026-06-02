@@ -45,6 +45,7 @@ The directories and files are numbered as a learning path — read them in order
   06-cyclic-sort.ipynb
   07-combinatorial-generation.ipynb
   08-coordinate-compression.ipynb
+  09-meet-in-the-middle.ipynb
   …                         (more patterns planned — see the table below)
 
 templates/
@@ -100,7 +101,7 @@ Problem-solving templates that combine the structures & algorithms above. These 
 | [cyclic sort](3-patterns/06-cyclic-sort.ipynb) | ✅ | in-place sort for `1..n` ranges; find missing/duplicate numbers in O(n)/O(1) |
 | [combinatorial generation](3-patterns/07-combinatorial-generation.ipynb) | ✅ | subsets/permutations/combinations (backtracking + bitmask); `itertools` |
 | [coordinate compression](3-patterns/08-coordinate-compression.ipynb) | ✅ | map sparse/huge values to dense `0..k-1` ranks; index a size-k array by value |
-| meet in the middle | 📋 | split the search space, combine halves |
+| [meet in the middle](3-patterns/09-meet-in-the-middle.ipynb) | ✅ | split 2ⁿ → 2·2^(n/2); subset-sum/closest-sum for n≈40, combine with set or `bisect` |
 | sweep line | 📋 | events sorted along an axis |
 
 ## Running
