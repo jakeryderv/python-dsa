@@ -42,6 +42,7 @@ The directories and files are numbered as a learning path — read them in order
   03-prefix-sums-and-difference-arrays.ipynb
   04-monotonic-stack-and-queue.ipynb
   05-top-k-and-k-way-merge.ipynb
+  06-cyclic-sort.ipynb
   …                         (more patterns planned — see the table below)
 
 templates/
@@ -94,7 +95,7 @@ Problem-solving templates that combine the structures & algorithms above. These 
 | [prefix sums & difference arrays](3-patterns/03-prefix-sums-and-difference-arrays.ipynb) | ✅ | O(1) range-sum/update; subarray-sum-k with negatives; 2D prefix sums |
 | [monotonic stack & queue](3-patterns/04-monotonic-stack-and-queue.ipynb) | ✅ | next-greater-element, daily temperatures, largest rectangle, sliding-window-max |
 | [top-K & K-way merge](3-patterns/05-top-k-and-k-way-merge.ipynb) | ✅ | size-k heap (O(n log k)), top-k-frequent, frontier-heap merge, `heapq.merge` |
-| cyclic sort | 📋 | in-place sort for `1..n` ranges |
+| [cyclic sort](3-patterns/06-cyclic-sort.ipynb) | ✅ | in-place sort for `1..n` ranges; find missing/duplicate numbers in O(n)/O(1) |
 | combinatorial generation | 📋 | subsets / permutations (backtracking + bitmask) |
 | coordinate compression | 📋 | map sparse values to dense indices |
 | meet in the middle | 📋 | split the search space, combine halves |
