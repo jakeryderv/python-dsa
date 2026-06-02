@@ -20,11 +20,16 @@ data-structures/
   trees.ipynb
   tries.ipynb
   graphs.ipynb
+
+algorithms/
+  sorting.ipynb
 ```
 
-> An `algorithms/` folder will follow later (sorting, searching, recursion/DP, graph traversals).
+> The `algorithms/` track has begun; more topics (searching, recursion/DP, graph algorithms) to follow.
 
 ## Notebooks
+
+### Data structures
 
 | Topic | Status | Covers |
 |---|:---:|---|
@@ -37,6 +42,18 @@ data-structures/
 | [trees](data-structures/trees.ipynb) | ✅ | BST from scratch, DFS/BFS traversals, the balance problem, `bisect` |
 | [tries](data-structures/tries.ipynb) | ✅ | prefix tree from scratch, autocomplete, node sharing, when a `set` wins |
 | [graphs](data-structures/graphs.ipynb) | ✅ | adjacency list vs matrix, BFS/DFS, topological sort, Dijkstra |
+
+### Algorithms
+
+| Topic | Status | Covers |
+|---|:---:|---|
+| [sorting](algorithms/sorting.ipynb) | ✅ | Timsort internals (runs, galloping, adaptive, stable); `key=`/DSU; classic sorts raced |
+| searching | 📋 | binary search & `bisect` invariants; linear vs binary |
+| recursion & backtracking | 📋 | the call stack, no tail-call optimization, recursion limit; backtracking |
+| dynamic programming | 📋 | memoization (`functools.cache`) vs tabulation; classic DPs |
+| graph algorithms | 📋 | Dijkstra / A\* / Bellman-Ford, MST (Prim/Kruskal + union-find) |
+| string algorithms | 📋 | the two-way algorithm `str.find` uses, KMP, Rabin-Karp |
+| bit manipulation | 📋 | arbitrary-precision `int` (`PyLong`, 30-bit digits); bitwise tricks |
 
 ## Running
 
