@@ -13,6 +13,8 @@ data-structures/
   _template.ipynb   ← copy this to start a new topic
   arrays.ipynb
   strings.ipynb
+  dictionaries-and-sets.ipynb
+  heaps.ipynb
 ```
 
 > An `algorithms/` folder will follow later (sorting, searching, recursion/DP, graph traversals).
@@ -23,8 +25,8 @@ data-structures/
 |---|:---:|---|
 | [arrays](data-structures/arrays.ipynb) | ✅ | `list`, `tuple`, `array`, `numpy`, `deque`; dynamic-array growth strategy |
 | [strings](data-structures/strings.ipynb) | ✅ | `str`, PEP 393 char-width, interning, the `+=` trap, `bytes`/`bytearray` |
-| dict & set | 📋 | hash tables, open addressing, compact-dict layout, resizing, hashing |
-| heaps | 📋 | `heapq` binary heap, sift up/down, `heapify` |
+| [dict & set](data-structures/dictionaries-and-sets.ipynb) | ✅ | hash tables, open addressing, compact-dict layout, resizing, hashing |
+| [heaps](data-structures/heaps.ipynb) | ✅ | `heapq` binary heap, sift up/down, `heapify` is O(n) |
 | linked lists | 📋 | singly/doubly from scratch; why CPython avoids them |
 | stacks & queues | 📋 | `list` / `deque` / `queue.Queue`; LIFO & FIFO |
 | trees | 📋 | BST, traversals, `bisect` on sorted lists, tries |
