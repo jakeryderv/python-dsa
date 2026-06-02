@@ -7,7 +7,7 @@ Each topic is a self-contained Jupyter notebook following the same shape:
 **concept → CPython internals → demos that *prove* the claims → when-to-use → complexity cheat-sheet.**
 
 The directories and files are numbered as a learning path — read them in order:
-**foundations → data structures → algorithms.**
+**foundations → data structures → algorithms → patterns.**
 
 ## Layout
 
@@ -35,6 +35,10 @@ The directories and files are numbered as a learning path — read them in order
   05-graph-algorithms.ipynb
   06-string-algorithms.ipynb
   07-bit-manipulation.ipynb
+
+3-patterns/
+  01-two-pointers.ipynb
+  …                         (more patterns planned — see the table below)
 
 templates/
   notebook-template.ipynb   ← copy this to start a new topic
@@ -74,6 +78,23 @@ templates/
 | [graph algorithms](2-algorithms/05-graph-algorithms.ipynb) | ✅ | Dijkstra, Bellman-Ford, A\*, union-find, MST (Kruskal/Prim) |
 | [string algorithms](2-algorithms/06-string-algorithms.ipynb) | ✅ | naive/KMP/Rabin-Karp; CPython `fastsearch` (BMH + two-way); built-in vs pure-Python |
 | [bit manipulation](2-algorithms/07-bit-manipulation.ipynb) | ✅ | arbitrary-precision `int` (`PyLong`, 30-bit digits); bit tricks; masking; bitmask sets |
+
+### Patterns
+
+Problem-solving templates that combine the structures & algorithms above. These read as **signal → template → worked examples → toolkit** (the internals slot doesn't apply).
+
+| Topic | Status | Covers |
+|---|:---:|---|
+| [two pointers](3-patterns/01-two-pointers.ipynb) | ✅ | converging, read/write, fast & slow (Floyd's); two-sum, dedupe, happy number |
+| sliding window | 📋 | fixed & variable windows |
+| prefix sums & difference arrays | 📋 | O(1) range-sum / range-update |
+| monotonic stack & queue | 📋 | next-greater-element, sliding-window-max |
+| top-K & K-way merge | 📋 | `heapq` selection & merging |
+| cyclic sort | 📋 | in-place sort for `1..n` ranges |
+| combinatorial generation | 📋 | subsets / permutations (backtracking + bitmask) |
+| coordinate compression | 📋 | map sparse values to dense indices |
+| meet in the middle | 📋 | split the search space, combine halves |
+| sweep line | 📋 | events sorted along an axis |
 
 ## Running
 
