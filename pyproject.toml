@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=7.2.0",
     "jupyter>=1.1.1",
     "numpy>=2.4.6",
+    "sortedcontainers>=2.4.0",
 ]
 
 [dependency-groups]

@@ -27,6 +27,7 @@ The directories and files are numbered as a learning path — read them in order
   08-tries.ipynb
   09-graphs.ipynb
   10-fenwick-and-segment-trees.ipynb
+  11-lru-cache.ipynb
 
 2-algorithms/
   01-sorting.ipynb
@@ -74,10 +75,11 @@ templates/
 | [heaps](1-data-structures/04-heaps.ipynb) | ✅ | `heapq` binary heap, sift up/down, `heapify` is O(n) |
 | [linked lists](1-data-structures/05-linked-lists.ipynb) | ✅ | singly/doubly from scratch; reversal & Floyd's cycle detection; why CPython avoids them; `deque`/`OrderedDict` |
 | [stacks & queues](1-data-structures/06-stacks-and-queues.ipynb) | ✅ | LIFO/FIFO; the `list`-as-queue O(n²) trap; `deque(maxlen)`; `queue` module |
-| [trees](1-data-structures/07-trees.ipynb) | ✅ | BST from scratch (insert/search/**delete**), DFS/BFS traversals, the balance problem, `bisect` |
+| [trees](1-data-structures/07-trees.ipynb) | ✅ | BST from scratch (insert/search/**delete**), DFS/BFS traversals, the balance problem, `bisect`, `sortedcontainers` |
 | [tries](1-data-structures/08-tries.ipynb) | ✅ | prefix tree from scratch, autocomplete, node sharing, when a `set` wins |
 | [graphs](1-data-structures/09-graphs.ipynb) | ✅ | adjacency list vs matrix, BFS/DFS, topological sort, Dijkstra |
 | [Fenwick & segment trees](1-data-structures/10-fenwick-and-segment-trees.ipynb) | ✅ | dynamic range queries: Fenwick (BIT) + segment tree, O(log n) update & query |
+| [LRU cache](1-data-structures/11-lru-cache.ipynb) | ✅ | hash map + doubly linked list for O(1) get/put; `OrderedDict` & `functools.lru_cache` |
 
 ### Algorithms
 
