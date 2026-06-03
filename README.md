@@ -20,56 +20,14 @@ The directories and files are numbered as a learning path — read them in order
 ## Layout
 
 ```
-0-foundations/
-  01-big-o.ipynb
-  02-python-idioms-for-dsa.ipynb
-  03-cpython-cost-model.ipynb
-
-1-data-structures/
-  01-arrays.ipynb
-  02-strings.ipynb
-  03-dictionaries-and-sets.ipynb
-  04-heaps.ipynb
-  05-linked-lists.ipynb
-  06-stacks-and-queues.ipynb
-  07-trees.ipynb
-  08-tries.ipynb
-  09-graphs.ipynb
-  10-fenwick-and-segment-trees.ipynb
-  11-lru-cache.ipynb
-  12-probabilistic-structures.ipynb
-
-2-algorithms/
-  01-sorting.ipynb
-  02-searching.ipynb
-  03-selection.ipynb
-  04-recursion-and-backtracking.ipynb
-  05-dynamic-programming.ipynb
-  06-graph-algorithms.ipynb
-  07-advanced-graph-algorithms.ipynb
-  08-string-algorithms.ipynb
-  09-suffix-structures.ipynb
-  10-bit-manipulation.ipynb
-  11-greedy.ipynb
-  12-number-theory.ipynb
-  13-computational-geometry.ipynb
-
-3-patterns/
-  01-two-pointers.ipynb
-  02-sliding-window.ipynb
-  03-prefix-sums-and-difference-arrays.ipynb
-  04-monotonic-stack-and-queue.ipynb
-  05-top-k-and-k-way-merge.ipynb
-  06-cyclic-sort.ipynb
-  07-combinatorial-generation.ipynb
-  08-coordinate-compression.ipynb
-  09-meet-in-the-middle.ipynb
-  10-sweep-line.ipynb
-  11-grid-and-matrix-traversal.ipynb
-
-templates/
-  notebook-template.ipynb   ← copy this to start a new topic
+0-foundations/      3 notebooks  — Big-O, Python idioms, the CPython cost model
+1-data-structures/  12 notebooks — arrays → probabilistic structures
+2-algorithms/       13 notebooks — sorting → computational geometry
+3-patterns/         11 notebooks — reusable problem-solving templates
+templates/          notebook-template.ipynb — copy to start a new topic
 ```
+
+Every notebook is linked with a one-line summary in the tables below.
 
 ## Notebooks
 
