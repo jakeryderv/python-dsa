@@ -1,0 +1,5 @@
+# Dependency manifest for mybinder.org (repo2docker doesn't read uv/pyproject).
+# Mirrors the runtime deps in pyproject.toml; jupyterlab + ipykernel come from
+# Binder's base image. Local development uses `uv sync`, not this file.
+numpy>=2.4.6
+sortedcontainers>=2.4.0

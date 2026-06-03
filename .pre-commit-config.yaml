@@ -1,0 +1,22 @@
+# Local hooks run through the project's uv env (no external repos to fetch).
+# Enable once with:  uv run pre-commit install
+# Then on every `git commit`:
+#   * ruff lints the staged Python / notebook files
+#   * nbmake executes the staged notebooks and fails on any cell error
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff (lint)
+        entry: uv run ruff check
+        language: system
+        types_or: [python, jupyter]
+        require_serial: true
+
+      - id: nbmake
+        name: nbmake (execute changed notebooks)
+        entry: uv run pytest
+        language: system
+        files: \.ipynb$
+        exclude: ^templates/
+        require_serial: true

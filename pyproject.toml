@@ -14,7 +14,27 @@ dependencies = [
 [dependency-groups]
 dev = [
     "nbmake>=1.5.5",
+    "pre-commit>=4.6.0",
     "pytest>=9.0.3",
+    "ruff>=0.15.15",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# These are teaching notebooks. Compact one-liners, per-section re-imports, and
+# l/r index names are deliberate house style — not mistakes. Keep the real-bug
+# catchers (pyflakes F, syntax E9, E711/E712/E722) and silence the rest.
+select = ["E4", "E7", "E9", "F"]
+ignore = [
+    "E701",  # if cond: stmt          — compact demo one-liners
+    "E702",  # stmt; stmt             — compact demo one-liners
+    "E401",  # import a, b            — compact, intentional
+    "E402",  # import mid-notebook    — each section re-imports to stand alone
+    "E731",  # f = lambda ...         — fine in a throwaway demo
+    "E741",  # ambiguous name 'l'     — used for a left index throughout
+    "F811",  # redefined-while-unused — cells are intentionally self-contained
 ]
 
 [tool.pytest.ini_options]

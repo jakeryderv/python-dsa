@@ -1,7 +1,10 @@
 name: notebooks
 
-# Execute every notebook end-to-end and fail on any cell error,
-# so committed notebooks never go stale or broken.
+# Three gates on every push:
+#   lint      — ruff (real-bug catcher, notebook-aware)
+#   test      — execute every notebook end-to-end, fail on any cell error (nbmake)
+#   freshness — re-execute and confirm the committed outputs aren't stale
+# so committed notebooks never go stale, broken, or unlinted.
 
 on:
   push:
@@ -9,18 +12,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Install uv
         uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.14"
-
       - name: Sync dependencies
         run: uv sync --frozen
+      - name: Ruff
+        run: uv run ruff check .
 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.14"
+      - name: Sync dependencies
+        run: uv sync --frozen
       - name: Execute all notebooks (nbmake)
         run: uv run pytest
+
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.14"
+      - name: Sync dependencies
+        run: uv sync --frozen
+      - name: Check saved outputs are current
+        run: uv run python scripts/check_outputs_fresh.py
